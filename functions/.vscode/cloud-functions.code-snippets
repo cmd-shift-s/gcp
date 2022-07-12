@@ -1,0 +1,43 @@
+{
+	"spec": {
+		"scope": "typescript",
+		"prefix": "_spec",
+		"body": [
+			"import { expect } from 'chai'",
+			"",
+			"describe('$1', () => {",
+			"})",
+		]
+	},
+	"test": {
+		"scope": "typescript",
+		"prefix": "_test",
+		"body": [
+			"it('$1', async () => {",
+			"\t// given",
+			"",
+			"\t// when",
+			"",
+			"\t// then",
+			"})",
+		]
+	},
+	"async arrow function": {
+		"scope": "typescript",
+		"prefix": "_asf",
+		"body": [
+			"async () => {",
+			"\t$1",
+			"}"
+		]
+	},
+	"arrow function": {
+		"scope": "typescript",
+		"prefix": "_af",
+		"body": [
+			"() => {",
+			"\t$1",
+			"}"
+		]
+	}
+}
